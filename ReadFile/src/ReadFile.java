@@ -24,6 +24,12 @@ public class ReadFile {
 				//deal with the splited parts
 				System.out.println(splited[0]);
 				System.out.println(splited[1]);
+				//split the second string with ','
+				String[] splited2 = splited[1].split(",");
+				//print the new splited2
+				System.out.println(splited2[0]);
+				System.out.println(splited2[1]);
+				System.out.println(splited2[2]);
 
 			}
 		}catch(Exception ex){
