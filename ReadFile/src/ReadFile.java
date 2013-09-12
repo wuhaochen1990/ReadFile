@@ -17,8 +17,14 @@ public class ReadFile {
 			BufferedReader br = new BufferedReader(fileread);
 			//start read the file
 			while((instruction=br.readLine())!=null){
-				//deal with each line of that file
+				//print the instruction
 				System.out.println(instruction+"\n");
+				//split the instruction
+				String[] splited = instruction.split(" ");
+				//deal with the splited parts
+				System.out.println(splited[0]);
+				System.out.println(splited[1]);
+
 			}
 		}catch(Exception ex){
 			//for exception situation
